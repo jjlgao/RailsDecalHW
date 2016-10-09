@@ -1,0 +1,16 @@
+<h1>HI</h1>
+
+<h2>cats</h2>
+<% @cats.each do |t| %>
+ <li><%= t.name %></li>
+<% end %>
+
+<h2>users</h2>
+<% @users.each do |t| %>
+ <li><%= t.username + "  " + t.email %></li>
+<% end %>
+
+<h2>todos</h2>
+<% @todos.each do |t| %>
+ <li><%= t.tasks + "  " + t.finished.to_s %></li>
+<% end %>
